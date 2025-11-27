@@ -1,8 +1,8 @@
 
     const defaultConfig = {
-      // hero_headline: "Transform Your Business Digitally",
-      // hero_subheadline: "Innovative virtual solutions tailored for modern enterprises",
-      // hero_cta_text: "Get Started Today",
+      hero_headline: "Transform Your Business Digitally",
+      hero_subheadline: "Innovative virtual solutions tailored for modern enterprises",
+      hero_cta_text: "Get Started Today",
       // about_title: "About Us",
       // company_bg_title: "Our Story",
       // company_bg_text: "Founded with a vision to revolutionize how businesses operate in the digital age, we've grown from a small startup to a leading provider of virtual solutions. Our journey is marked by continuous innovation, dedication to excellence, and a commitment to helping businesses thrive in an increasingly digital world.",
@@ -31,15 +31,54 @@ async function loadSheetData() {
 }
 
 function applyConfig(config) {
-  document.getElementById('hero-headline').textContent = config.hero_headline;
-  document.getElementById('hero-subheadline').textContent = config.hero_subheadline;
-  document.getElementById('hero-cta').textContent = config.hero_cta_text;
+  // document.getElementById('hero-headline').textContent = config.hero_headline;
+  // document.getElementById('hero-subheadline').textContent = config.hero_subheadline;
+  // document.getElementById('hero-cta').textContent = config.hero_cta_text;
   document.getElementById('about-title').textContent = config.about_title;
+  document.getElementById('about-content').textContent = config.about_content;
   document.getElementById('company-bg-title').textContent = config.company_bg_title;
   document.getElementById('company-bg-text').textContent = config.company_bg_text;
+  document.getElementById('mission-text').textContent = config.mission_text;
+  document.getElementById('vision-text').textContent = config.vision_text;
+  
+  document.getElementById('values1-title').textContent = config.values1_title;
+  document.getElementById('values1-text').textContent = config.values1_text;
+
+  document.getElementById('values2-title').textContent = config.values2_title;
+  document.getElementById('values2-text').textContent = config.values2_text;
+
+  document.getElementById('values3-title').textContent = config.values3_title;
+  document.getElementById('values3-text').textContent = config.values3_text;
+
+  document.getElementById('values4-title').textContent = config.values4_title;
+  document.getElementById('values4-text').textContent = config.values4_text;
+
+  document.getElementById('values5-title').textContent = config.values5_title;
+  document.getElementById('values5-text').textContent = config.values5_text;
+
+  document.getElementById('values6-title').textContent = config.values6_title;
+  document.getElementById('values6-text').textContent = config.values6_text;
   document.getElementById('services-title').textContent = config.services_title;
-  document.getElementById('footer-company-name').textContent = config.footer_company_name;
-  document.getElementById('footer-tagline').textContent = config.footer_tagline;
+  document.getElementById('service-1').textContent = config.service_1;
+  document.getElementById('service-1text').textContent = config.service_1text;
+  document.getElementById('service-2').textContent = config.service_2;
+  document.getElementById('service-2text').textContent = config.service_2text;
+  document.getElementById('service-3').textContent = config.service_3;
+  document.getElementById('service-3text').textContent = config.service_3text;
+  document.getElementById('leader-name1').textContent = config.leader_name1;
+  document.getElementById('leader-position1').textContent = config.leader_position1;
+
+  document.getElementById('leader-name2').textContent = config.leader_name2;
+  document.getElementById('leader-position2').textContent = config.leader_position2;
+
+  document.getElementById('leader-name3').textContent = config.leader_name3;
+  document.getElementById('leader-position3').textContent = config.leader_position3;
+
+  document.getElementById('email-1').textContent = config.email_1;
+  document.getElementById('linkedin-1').textContent = config.linkedin_1;
+  document.getElementById('phone-1').textContent = config.phone_1;
+  // document.getElementById('footer-company-name').textContent = config.footer_company_name;
+  // document.getElementById('footer-tagline').textContent = config.footer_tagline;
 }
 
 // Run after DOM loads
